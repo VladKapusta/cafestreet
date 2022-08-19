@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Street</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -12,10 +13,10 @@
     <header>
         <nav>
             <a href="./index.html" class="logo"><img src="./images/logo_coffe.png" alt="cofestreet"></a>
-        <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Product</a></li>
-            <li><a href="#">Delivery</a></li>
+        <ul class="saite-nav">
+            <li><a href="#about" class="link">About us</a></li>
+            <li><a href="#product" class="link">Our Product</a></li>
+            <li><a href="#delivery" class="link">Delivery</a></li>
         </ul>
         <input type="text">
         <a href="#"><img src="./images/icons_cart.png" alt="cart"></a>
@@ -23,15 +24,140 @@
     </header>
 
     <!-- main content -->
-    <!-- hero -->
-    <section>
-        <h1>Enjoy your coffee before your activity</h1>
-        <p>Boost your productivity and build your mood with a glass of coffee in the morning </p>
-        <a href="#">Order now <img src="./images/group_cart.png" alt="car"></a>
-        <a href="#">more menu</a>
-        <img src="./images/bg_img_hero.jpg" alt="coffee" width="569" height="394">
-        <img src="./images/bg_img_hero.jpg" alt="coffee" width="599" height="394">
-    </section>
+    <main>
+        
+        <!-- hero -->
+        <section class="hero">
+            <h1 class="hero-titels">Enjoy your <span class="word">coffee</span> before your activity</h1>
+            <p class="hero-text">Boost your productivity and build your mood with a glass of coffee in the morning </p>
+            <a href="#" class="link order">Order now <img src="./images/group_cart.png" alt="car"></a>
+            <a href="#" class="link menu">more menu</a>
+            <!-- <img src="./images/bg_img_hero.jpg" alt="coffee" width="569" height="394">
+            <img src="./images/bg_img_hero.jpg" alt="coffee" width="599" height="394"> -->
+        </section>
     
+        <!-- popular -->
+        <section class="popular">
+            <h2 class="popular-titels">Popular <span class="popular-word">Now</span></h2>
+            <ul>
+                <li class="card">
+                    <a href="#"><img src="./images/vanilla-latte.jpg" alt="" width="307"></a>
+                    <h3 class="card-titel">Vanilla Latte</h3>
+                    <p class="card-text">21 K</p>
+                    <button type="button" class="card-button">Hot</button>
+                    <button type="button" class="card-button">Cold</button>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>  
+                </li>
+                <li>
+                    <a href="#"><img src="./images/espresso.jpg" alt="" width="307"></a>
+                    <h3 class="card-titel">Espresso</h3>
+                    <p class="card-text">12 K</p>
+                    <button type="button" class="card-button">Hot</button>
+                    <button type="button" class="card-button">Cold</button>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>  
+                </li>
+                <li>
+                    <a href="#"><img src="./images/huzelnut-lattr.jpg" alt="" width="307"></a>
+                    <h3 class="card-titel">Hazelnut</h3>
+                    <p class="card-text">23 K</p>
+                    <button type="button" class="card-button">Hot</button>
+                    <button type="button" class="card-button">Cold</button>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>  
+                </li>
+            </ul>
+        </section>
+       
+        <!-- delivery -->
+        <section id="delivery" class="delivery">
+            <h2 class="delivery-titels">How to use delivery <span class="delivery-word">service</span></h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="./images/coffee-cup.png" alt=""></a>
+                    <h3 class="delivery-titel">choose your coffee</h3>
+                    <p class="delivery-text">there are 20+ coffees for you</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/food-truck.png" alt=""></a>
+                    <h3 class="delivery-titel">we delivery it to you</h3>
+                    <p class="delivery-text">Choose delivery service</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/coffee.png" alt=""></a>
+                    <h3 class="delivery-titel">Enjoy your coffee</h3>
+                    <p class="delivery-text">Choose delivery service</p>
+                </li>
+            </ul>
+        </section>
+    
+        <!-- about us -->
+        <section id="about" class="about">
+            <img src="./images/coffee-about.jpg" alt="" width="307" height="509">
+            <div>
+                <h2 class="about-titels">About <span class="about-word">us</span></h2>
+                <h3 class="about-titel">We provide quality coffee, and ready to deliver.</h3>
+                <p class="about-text">We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</p>
+                <a href="#" class="about link">Get your coffee</a>
+            </div>
+        </section>
+    
+        <!-- special menu -->
+        <section id="product" class="product">
+            <h2 class="product-titels">Special menu <span class="product-word">for you</span></h2>
+            <ul class="product-list">
+                <li>
+                    <a href=""><img src="./images/sandwich.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Sandwich</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">bread with meat and vegetables</p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/hot-milk.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Hot Milk</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">Hot Milk with less sugar</p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/ice-cream.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Coffe Ice Cream</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">Coffe with ice cream vanilla</p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/cappuc.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Cappucino</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">Hot Cappucino</p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/mocca.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Moccacinno</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">Hot Moccacino </p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/waffle.jpg" alt="" width="310"></a>
+                    <h3 class="product-name">Waffle Ice Crem</h3>
+                    <p class="product-price">12 K</p>
+                    <p class="product-text">Wafle with Ice cream</p>
+                    <a href="#"><img src="./images/group_cart.png" alt="car"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <section class="footers">
+            <img src="./images/bg-footer.jpg" alt="" width="1170" height="390">
+            <h2 class="footers-titels">Subscribe to get 50% discount price</h2>
+            <input type="text">
+            <button type="button" class="footers-button">Order now</button>
+        </section>
+    </footer>    
 </body>
 </html>
